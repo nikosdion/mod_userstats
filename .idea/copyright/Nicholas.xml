@@ -1,0 +1,8 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="allowReplaceRegexp" value="@copyright\s*\d{4,4}(–\d{4,4})?\s*Nicholas" />
+    <option name="keyword" value="@copyright\s*\d{4,4}(–\d{4,4})?\s*Nicholas" />
+    <option name="notice" value="@copyright &amp;#36;originalComment.match(&quot;@copyright\s*(\d+)&quot;, 1, &quot;–&quot;)&amp;#36;today.year Nicholas K. Dionysopoulos &#10;@license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3 or later&#10;@author    Nicholas K. Dionysopoulos" />
+    <option name="myName" value="Nicholas" />
+  </copyright>
+</component>

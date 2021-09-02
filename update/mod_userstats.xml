@@ -1,0 +1,26 @@
+<updates>
+    <update>
+        <version>1.0.0</version>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <downloads>
+            <downloadurl type="full" format="zip">
+                https://github.com/nikosdion/mod_userstats/releases/1.0.0/mod_userstats.zip
+            </downloadurl>
+        </downloads>
+        <infourl title="User Statistics module release notes">
+            https://github.com/nikosdion/mod_userstats/releases/1.0.0
+        </infourl>
+        <targetplatform name="joomla" version="(3\.(9|10)|4\.0)"/>
+        <php_minimum>7.2.0</php_minimum>
+        <name>User Statistics module</name>
+        <description>User Statistics — A Joomla 3 and 4 administrator module for month–by–month user statistics</description>
+        <element>mod_userstats</element>
+        <type>module</type>
+        <maintainer>Nicholas K. Dionysopoulos</maintainer>
+        <maintainerurl>https://www.dionysopoulos.me</maintainerurl>
+        <section>Updates</section>
+        <client>1</client>
+    </update>
+</updates>

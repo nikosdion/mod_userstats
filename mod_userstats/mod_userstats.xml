@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @copyright 2021 Nicholas K. Dionysopoulos
+  ~ @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3 or later
+  ~ @author    Nicholas K. Dionysopoulos
+  -->
+
+<extension type="module" version="3.9.0" method="upgrade" client="administrator">
+    <name>MOD_USERSTATS</name>
+    <author>Nicholas K. Dionysopoulos</author>
+    <creationDate>2021-09-02</creationDate>
+    <copyright>Copyright (c)2021 Nicholas K. Dionysopoulos</copyright>
+    <license>GNU GPL v3 or later</license>
+    <authorEmail>no-reply@dionysopoulos.me</authorEmail>
+    <authorUrl>www.dionysopoulos.me</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_USERSTATS_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_userstats">mod_userstats.php</filename>
+        <filename>helper.php</filename>
+        <filename>.htaccess</filename>
+        <filename>web.config</filename>
+
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_userstats.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_userstats.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                        default="table"
+                        validate="moduleLayout"
+                />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                        rows="3"
+                />
+
+                <field
+                        name="cache"
+                        type="list"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                        default="1"
+                        filter="integer"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="number"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                        default="900"
+                        filter="integer"
+                />
+
+                <field
+                        name="cachemode"
+                        type="hidden"
+                        default="static"
+                >
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+
+        </fields>
+    </config>
+
+    <!-- Update servers -->
+    <updateservers>
+        <server type="extension" priority="1" name="User Statistics administrator module">https://raw.githubusercontent.com/nikosdion/mod_userstats/main/update/mod_userstats.xml</server>
+    </updateservers>
+</extension>
