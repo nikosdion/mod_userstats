@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright 2021 Nicholas K. Dionysopoulos
+ * @copyright 2021-2023 Nicholas K. Dionysopoulos
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3 or later
  * @author    Nicholas K. Dionysopoulos
  */
